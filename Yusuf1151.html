@@ -1,1 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf Fajar 1151 - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #000000, #4b0082);
+            color: #ffffff;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(30, 30, 30, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .header:hover {
+            background-color: rgba(51, 51, 51, 0.8);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00d8ff;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://source.unsplash.com/1600x900/?space') no-repeat center center/cover;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 4px #000000;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .card {
+            background-color: rgba(30, 30, 30, 0.8);
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            background-color: rgba(51, 51, 51, 0.8);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card-title {
+            font-size: 24px;
+            margin: 15px 0;
+        }
+
+        .card-description {
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: rgba(30, 30, 30, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .social-icons {
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .social-icons a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #00d8ff;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">Yusuf Fajar 1151</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to My Portfolio</h1>
+    </div>
+
+    <div class="content" id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Yusuf Fajar, a passionate programmer and web developer. I love creating dynamic and visually appealing websites. Welcome to my portfolio!</p>
+    </div>
+
+    <div class="content" id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <div class="card-title">Personal Information</div>
+            <div class="card-description">
+                <p><strong>Name:</strong> Yusuf Fajar Firmansah</p>
+                <p><strong>Place and Date of Birth:</strong> Magetan, 8 July 2005</p>
+                <p><strong>Address:</strong> Jarakan Nglopang Parang Magetan</p>
+                <p><strong>Hobbies:</strong> Playing games, traveling, trying new things</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach out to me on <a href="mailto:yusuf@example.com">zaztro12@gmail.com</a>.</p>
+    </div>
+
+    <div class="footer">
+        <div class="social-icons">
+            <a href="https://twitter.com/username" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter"></a>
+            <a href="https://linkedin.com/in/username" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Yusuf1151" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"></a>
+            <a href="https://facebook.com/Vladimirov Ahmad Ismailov" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+            <a href="https://instagram.com/yusuf_fajar_1151" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+            <a href="https://wa.me/085806216469" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
+        </div>
+        &copy; 2024 Yusuf Fajar. All rights reserved.
+    </div>
+
+</body>
+      </html>
 
